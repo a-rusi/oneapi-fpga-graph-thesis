@@ -1,0 +1,31 @@
+{
+  "nodes":
+  [
+    {
+      "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41"
+      , "id":142464424
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B2"
+          , "id":142915504
+          , "type":"bb"
+        }
+        , {
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B1"
+          , "id":142915424
+          , "type":"bb"
+        }
+        , {
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B0"
+          , "id":142912000
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

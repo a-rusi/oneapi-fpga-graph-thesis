@@ -1,0 +1,980 @@
+{
+  "142464424":
+  {
+    "nodes":
+    [
+      {
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B0"
+        , "id":142912000
+        , "start":"0"
+        , "end":"214"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"<arg4>"
+            , "id":154986608
+            , "start":"2"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg4>'"
+                , "Start Cycle":"2"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg0>"
+            , "id":153806736
+            , "start":"211"
+            , "end":"211"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg0>'"
+                , "Start Cycle":"211"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg3>"
+            , "id":146250832
+            , "start":"211"
+            , "end":"211"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg3>'"
+                , "Start Cycle":"211"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":157912240
+            , "start":"211"
+            , "end":"211"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"211"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":894
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":148302160
+            , "start":"211"
+            , "end":"211"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"211"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":1538
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":148127328
+            , "start":"211"
+            , "end":"214"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Prefetching"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"211"
+                , "Latency":"3"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":80
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Compare"
+            , "id":148177792
+            , "start":"214"
+            , "end":"214"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"32-bit Integer Compare"
+                , "Start Cycle":"214"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":80
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg7>"
+            , "id":145480016
+            , "start":"1"
+            , "end":"1"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg7>'"
+                , "Start Cycle":"1"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":148056352
+            , "start":"1"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":894
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":148061600
+            , "start":"1"
+            , "end":"2"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":148222896
+            , "start":"2"
+            , "end":"214"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"128 bits"
+                , "LSU Style":"Burst-coalesced non-aligned"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"2"
+                , "Latency":"212"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":783
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Compare"
+            , "id":145714048
+            , "start":"214"
+            , "end":"214"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"64-bit Integer Compare"
+                , "Start Cycle":"214"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":886
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":145869616
+            , "start":"214"
+            , "end":"214"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"214"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B1"
+        , "id":142915424
+        , "start":"214"
+        , "end":"843"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"LD"
+            , "id":150053376
+            , "start":"215"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"1"
+                , "Latency":"192"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Compare"
+            , "id":148169024
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"32-bit Integer Compare"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Xor"
+            , "id":146996912
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Xor"
+                , "Constant Operand":"1 (0x1)"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":151268432
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Compare"
+            , "id":145664272
+            , "start":"843"
+            , "end":"843"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"64-bit Integer Compare"
+                , "Start Cycle":"629"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":886
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":146438944
+            , "start":"843"
+            , "end":"843"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"629"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":886
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":148407328
+            , "start":"625"
+            , "end":"625"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"411"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":805
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":153357488
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":146702928
+            , "start":"843"
+            , "end":"843"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"629"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":886
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg12>"
+            , "id":148516560
+            , "start":"817"
+            , "end":"817"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg12>'"
+                , "Start Cycle":"603"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg11>"
+            , "id":148323520
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg11>'"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg15>"
+            , "id":147650656
+            , "start":"817"
+            , "end":"817"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg15>'"
+                , "Start Cycle":"603"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":151501344
+            , "start":"817"
+            , "end":"817"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"603"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":894
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg8>"
+            , "id":146599920
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg8>'"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":153873424
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":894
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":146644992
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":1524
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":147999712
+            , "start":"407"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"193"
+                , "Latency":"192"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Compare"
+            , "id":147096432
+            , "start":"599"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"32-bit Integer Compare"
+                , "Start Cycle":"385"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"And"
+            , "id":154828240
+            , "start":"599"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit And"
+                , "Start Cycle":"385"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Xor"
+            , "id":147935440
+            , "start":"599"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Xor"
+                , "Constant Operand":"1 (0x1)"
+                , "Start Cycle":"385"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":86
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":149215648
+            , "start":"599"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"385"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":86
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":147851616
+            , "start":"599"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"385"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":86
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"ST"
+            , "id":151297856
+            , "start":"599"
+            , "end":"625"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"385"
+                , "Latency":"26"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":86
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":145623440
+            , "start":"625"
+            , "end":"817"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"411"
+                , "Latency":"192"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":87
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":149228720
+            , "start":"817"
+            , "end":"817"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"603"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":1524
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"ST"
+            , "id":148232784
+            , "start":"817"
+            , "end":"843"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"603"
+                , "Latency":"26"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":87
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B2"
+        , "id":142915504
+        , "start":"843"
+        , "end":"843"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

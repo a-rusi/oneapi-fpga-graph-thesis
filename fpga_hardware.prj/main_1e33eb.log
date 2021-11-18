@@ -1,0 +1,4 @@
+Compiler Command: aoc -o /tmp/main-1e33eb.aocx /tmp/main-bfcb33.spv -sycl -dep-files=/tmp/main-ac47cc.d -output-report-folder=fpga_hardware.prj -g -hardware -board=intel_a10gx_pac:pac_a10
+System name: main_1e33eb
+
+
