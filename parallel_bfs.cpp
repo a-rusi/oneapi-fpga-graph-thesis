@@ -12,20 +12,18 @@ using namespace std;
 void bfs()
 {
     //simple graph init
-    int nodes = 10;
-    vector<vector<int>> graph(nodes, vector<int>(nodes));
+    int nodes = 10000;
+    vector<vector<int>> graph(nodes, vector<int>(nodes, -1));
     for (int i = 0; i < nodes; i++)
     {
-        for (int j = i + 1; j < nodes; j++)
+        int amount_of_edges = (rand() % nodes + 1) / 2;
+        for (int j = 0; j < amount_of_edges; j++)
         {
-            graph[i][j] = rand() % nodes + 1;
-        }
-    }
-    for (int i = 0; i < nodes; i++)
-    {
-        for (int j = i + 1; j < nodes; j++)
-        {
-            std::cout << graph[i][j] << std::endl;
+            int other_node = rand() % nodes + 1;
+            if (other_node != i)
+            {
+                graph[i][other_node] = other_node;
+            }
         }
     }
 
@@ -83,7 +81,7 @@ void bfs()
                 {
                     for (auto &neighbor : graph_access[i])
                     {
-                        if (parents_access[neighbor] == -1)
+                        if (neighbor != -1 && parents_access[neighbor] == -1)
                         {
                             parents_access[neighbor] = i;
                             next_frontier_access[neighbor] = 1;
