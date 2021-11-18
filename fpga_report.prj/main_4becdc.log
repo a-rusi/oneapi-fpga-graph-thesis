@@ -1,0 +1,3 @@
+Compiler Command: aoc -o /tmp/main-4becdc.aocr /tmp/main-07a6df.spv -sycl -rtl -dep-files=/tmp/main-aa4fc9.d -output-report-folder=fpga_report.prj -g -hardware -board=intel_a10gx_pac:pac_a10
+System name: main_4becdc
+

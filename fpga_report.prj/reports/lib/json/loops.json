@@ -4,7 +4,7 @@
   , "children":
   [
     {
-      "name":"Kernel: _ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41"
+      "name":"Kernel: _ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41"
       , "data":
       ["", "", ""]
       , "debug":
@@ -12,7 +12,7 @@
         [
           {
             "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-            , "line":84
+            , "line":79
           }
         ]
       ]
@@ -45,7 +45,7 @@
       , "children":
       [
         {
-          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B1"
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B1"
           , "data":
           ["No", "n/a", "n/a"]
           , "debug":
@@ -53,7 +53,7 @@
             [
               {
                 "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                , "line":87
+                , "line":82
               }
             ]
           ]

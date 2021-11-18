@@ -4,9 +4,9 @@
   , "debug_enabled":"true"
   , "type":"module"
   , "total_percent":
-  [43.131, 22.2542, 22.1754, 24.0324, 8.10277]
+  [43.1339, 22.2583, 22.1749, 24.1062, 8.10277]
   , "total":
-  [188680, 378933, 652, 123, 73]
+  [188715, 378925, 654, 123, 73]
   , "name":"Kernel System"
   , "max_resources":
   [854400, 1708800, 2713, 1518, 42720]
@@ -78,13 +78,13 @@
       ]
     }
     , {
-      "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41"
+      "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41"
       , "compute_units":1
       , "type":"function"
       , "total_percent":
-      [1.85599, 0.921934, 0.981566, 3.57538, 0]
+      [1.85892, 0.92603, 0.981098, 3.6491, 0]
       , "total_kernel_resources":
-      [6417, 16773, 97, 0, 73]
+      [6452, 16765, 99, 0, 73]
       , "details":
       [
         {
@@ -116,7 +116,7 @@
           ]
         }
         , {
-          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B0"
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B0"
           , "type":"basicblock"
           , "children":
           [
@@ -167,7 +167,7 @@
               , "children":
               [
                 {
-                  "name":"main.cpp:85"
+                  "name":"main.cpp:80"
                   , "type":"resource"
                   , "data":
                   [373.5, 440, 13, 0, 0]
@@ -176,7 +176,7 @@
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":85
+                        , "line":80
                       }
                     ]
                   ]
@@ -218,7 +218,7 @@
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:87 > stl_iterator.h:886"
+                  "name":"main.cpp:82 > stl_iterator.h:886"
                   , "type":"resource"
                   , "data":
                   [21, 0, 0, 0, 0]
@@ -227,7 +227,7 @@
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":87
+                        , "line":82
                       }
                       , {
                         "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
@@ -248,7 +248,7 @@
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:87 > stl_vector.h:573 > \nstl_iterator.h:783"
+                  "name":"main.cpp:82 > stl_vector.h:573 > \nstl_iterator.h:783"
                   , "type":"resource"
                   , "data":
                   [406.5, 1325.5, 8, 0, 0]
@@ -257,7 +257,7 @@
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":87
+                        , "line":82
                       }
                       , {
                         "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_vector.h"
@@ -293,7 +293,7 @@
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:87 > stl_vector.h:591 > \nstl_iterator.h:783"
+                  "name":"main.cpp:82 > stl_vector.h:591 > \nstl_iterator.h:783"
                   , "type":"resource"
                   , "data":
                   [406.5, 1325.5, 8, 0, 0]
@@ -302,7 +302,7 @@
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":87
+                        , "line":82
                       }
                       , {
                         "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_vector.h"
@@ -338,7 +338,7 @@
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:89"
+                  "name":"main.cpp:84"
                   , "type":"resource"
                   , "data":
                   [0.5, 0, 0, 0, 0]
@@ -347,7 +347,7 @@
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":89
+                        , "line":84
                       }
                     ]
                   ]
@@ -368,7 +368,7 @@
           ]
         }
         , {
-          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B1"
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B1"
           , "type":"basicblock"
           , "children":
           [
@@ -376,7 +376,7 @@
               "name":"State"
               , "type":"resource"
               , "data":
-              [399, 453, 18, 0, 1]
+              [420, 445, 20, 0, 1]
               , "details":
               [
                 {
@@ -409,7 +409,7 @@
                   "name":"No Source Line"
                   , "type":"resource"
                   , "data":
-                  [399, 453, 18, 0, 1]
+                  [420, 445, 20, 0, 1]
                 }
               ]
             }
@@ -419,16 +419,16 @@
               , "children":
               [
                 {
-                  "name":"main.cpp:85"
+                  "name":"main.cpp:80"
                   , "type":"resource"
                   , "data":
-                  [0.666667, 0, 0, 0, 0]
+                  [1.33333, 0, 0, 0, 0]
                   , "debug":
                   [
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":85
+                        , "line":80
                       }
                     ]
                   ]
@@ -437,24 +437,24 @@
                     {
                       "name":"1-bit Or"
                       , "type":"resource"
-                      , "count":2
+                      , "count":4
                       , "data":
-                      [0.666667, 0, 0, 0, 0]
+                      [1.33333, 0, 0, 0, 0]
                     }
                   ]
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:87 > stl_iterator.h:886"
+                  "name":"main.cpp:82 > stl_iterator.h:886"
                   , "type":"resource"
                   , "data":
-                  [23.6667, 0, 0, 0, 0]
+                  [24.3333, 0, 0, 0, 0]
                   , "debug":
                   [
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":87
+                        , "line":82
                       }
                       , {
                         "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
@@ -467,9 +467,9 @@
                     {
                       "name":"1-bit Or"
                       , "type":"resource"
-                      , "count":4
+                      , "count":6
                       , "data":
-                      [2.66667, 0, 0, 0, 0]
+                      [3.33333, 0, 0, 0, 0]
                     }
                     , {
                       "name":"64-bit Integer Compare"
@@ -482,27 +482,41 @@
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:89"
+                  "name":"main.cpp:84"
                   , "type":"resource"
                   , "data":
-                  [1019, 4100, 30, 0, 0]
+                  [1031.67, 4100, 30, 0, 0]
                   , "debug":
                   [
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":89
+                        , "line":84
                       }
                     ]
                   ]
                   , "children":
                   [
                     {
-                      "name":"32-bit Integer Compare"
+                      "name":"1-bit And"
                       , "type":"resource"
                       , "count":1
                       , "data":
-                      [11, 0, 0, 0, 0]
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0.666667, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [22, 0, 0, 0, 0]
                     }
                     , {
                       "name":"Load"
@@ -526,7 +540,7 @@
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:91"
+                  "name":"main.cpp:86"
                   , "type":"resource"
                   , "data":
                   [399.667, 2216, 1, 0, 31]
@@ -535,7 +549,7 @@
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":91
+                        , "line":86
                       }
                     ]
                   ]
@@ -570,7 +584,7 @@
                   , "replace_name":"true"
                 }
                 , {
-                  "name":"main.cpp:92"
+                  "name":"main.cpp:87"
                   , "type":"resource"
                   , "data":
                   [1799, 4107, 16, 0, 31]
@@ -579,7 +593,7 @@
                     [
                       {
                         "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                        , "line":92
+                        , "line":87
                       }
                     ]
                   ]

@@ -2,8 +2,8 @@
   "nodes":
   [
     {
-      "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41"
-      , "id":1995584936
+      "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41"
+      , "id":4097095080
       , "type":"kernel"
       , "children":
       [
@@ -290,7 +290,7 @@
                       [
                         {
                           "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                          , "line":"84"
+                          , "line":"79"
                         }
                       ]
                     }
@@ -303,7 +303,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":84
+                    , "line":79
                   }
                 ]
               ]

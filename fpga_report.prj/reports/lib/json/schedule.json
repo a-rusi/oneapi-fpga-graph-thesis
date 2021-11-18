@@ -1,11 +1,11 @@
 {
-  "1995584936":
+  "4097095080":
   {
     "nodes":
     [
       {
-        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B0"
-        , "id":1996032512
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B0"
+        , "id":4097542656
         , "start":"0"
         , "end":"214"
         , "details":
@@ -18,40 +18,8 @@
         , "children":
         [
           {
-            "name":"<arg7>"
-            , "id":2010942352
-            , "start":"1"
-            , "end":"1"
-            , "details":
-            [
-              {
-                "type":"table"
-                , "Instruction":"Input Synchronization for '<arg7>'"
-                , "Start Cycle":"1"
-                , "Latency":"0"
-              }
-            ]
-            , "type":"inst"
-          }
-          , {
-            "name":"<arg3>"
-            , "id":2001361248
-            , "start":"211"
-            , "end":"211"
-            , "details":
-            [
-              {
-                "type":"table"
-                , "Instruction":"Input Synchronization for '<arg3>'"
-                , "Start Cycle":"211"
-                , "Latency":"0"
-              }
-            ]
-            , "type":"inst"
-          }
-          , {
             "name":"<arg0>"
-            , "id":2001353968
+            , "id":4109414432
             , "start":"211"
             , "end":"211"
             , "details":
@@ -66,8 +34,24 @@
             , "type":"inst"
           }
           , {
+            "name":"<arg3>"
+            , "id":4102568928
+            , "start":"211"
+            , "end":"211"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg3>'"
+                , "Start Cycle":"211"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
             "name":"Ptr. Comp."
-            , "id":2007686528
+            , "id":4101408816
             , "start":"211"
             , "end":"211"
             , "details":
@@ -92,7 +76,7 @@
           }
           , {
             "name":"Ptr. Comp."
-            , "id":2001300912
+            , "id":4102898096
             , "start":"211"
             , "end":"211"
             , "details":
@@ -117,7 +101,7 @@
           }
           , {
             "name":"LD"
-            , "id":2001378928
+            , "id":4102693008
             , "start":"211"
             , "end":"214"
             , "details":
@@ -138,7 +122,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":85
+                  , "line":80
                 }
               ]
             ]
@@ -146,7 +130,7 @@
           }
           , {
             "name":"Compare"
-            , "id":2007249872
+            , "id":4102840672
             , "start":"214"
             , "end":"214"
             , "details":
@@ -163,15 +147,31 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":85
+                  , "line":80
                 }
               ]
             ]
             , "type":"inst"
           }
           , {
+            "name":"<arg7>"
+            , "id":4102530256
+            , "start":"1"
+            , "end":"1"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg7>'"
+                , "Start Cycle":"1"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
             "name":"<arg4>"
-            , "id":1999509136
+            , "id":4102168528
             , "start":"2"
             , "end":"2"
             , "details":
@@ -187,7 +187,7 @@
           }
           , {
             "name":"Ptr. Comp."
-            , "id":2001355760
+            , "id":4110431424
             , "start":"1"
             , "end":"2"
             , "details":
@@ -212,7 +212,7 @@
           }
           , {
             "name":"Ptr. Comp."
-            , "id":2001140480
+            , "id":4102790624
             , "start":"1"
             , "end":"2"
             , "details":
@@ -228,7 +228,7 @@
           }
           , {
             "name":"LD"
-            , "id":2001172608
+            , "id":4108006624
             , "start":"2"
             , "end":"214"
             , "details":
@@ -257,7 +257,7 @@
           }
           , {
             "name":"Compare"
-            , "id":2001359776
+            , "id":4102353200
             , "start":"214"
             , "end":"214"
             , "details":
@@ -282,7 +282,7 @@
           }
           , {
             "name":"Or"
-            , "id":2001016928
+            , "id":4102691200
             , "start":"214"
             , "end":"214"
             , "details":
@@ -299,7 +299,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":89
+                  , "line":84
                 }
               ]
             ]
@@ -308,8 +308,8 @@
         ]
       }
       , {
-        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B1"
-        , "id":1996035936
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B1"
+        , "id":4097546080
         , "start":"214"
         , "end":"843"
         , "details":
@@ -323,7 +323,7 @@
         [
           {
             "name":"LD"
-            , "id":1998664912
+            , "id":4102644928
             , "start":"215"
             , "end":"407"
             , "details":
@@ -344,7 +344,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":89
+                  , "line":84
                 }
               ]
             ]
@@ -352,7 +352,83 @@
           }
           , {
             "name":"Compare"
-            , "id":2007078544
+            , "id":4101154464
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"32-bit Integer Compare"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Xor"
+            , "id":4101529344
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Xor"
+                , "Constant Operand":"1 (0x1)"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":4102668144
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Compare"
+            , "id":4101725264
             , "start":"843"
             , "end":"843"
             , "details":
@@ -377,7 +453,7 @@
           }
           , {
             "name":"Or"
-            , "id":2007832432
+            , "id":4108958688
             , "start":"843"
             , "end":"843"
             , "details":
@@ -402,15 +478,15 @@
           }
           , {
             "name":"Ptr. Comp."
-            , "id":2007020784
-            , "start":"842"
-            , "end":"842"
+            , "id":4103642400
+            , "start":"625"
+            , "end":"625"
             , "details":
             [
               {
                 "type":"table"
                 , "Instruction":"Pointer Computation"
-                , "Start Cycle":"628"
+                , "Start Cycle":"411"
                 , "Latency":"0"
               }
             ]
@@ -427,7 +503,32 @@
           }
           , {
             "name":"Or"
-            , "id":2006377648
+            , "id":4103701728
+            , "start":"407"
+            , "end":"407"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Start Cycle":"193"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":4101694352
             , "start":"843"
             , "end":"843"
             , "details":
@@ -451,24 +552,8 @@
             , "type":"inst"
           }
           , {
-            "name":"<arg11>"
-            , "id":2001346800
-            , "start":"407"
-            , "end":"407"
-            , "details":
-            [
-              {
-                "type":"table"
-                , "Instruction":"Input Synchronization for '<arg11>'"
-                , "Start Cycle":"193"
-                , "Latency":"0"
-              }
-            ]
-            , "type":"inst"
-          }
-          , {
             "name":"<arg15>"
-            , "id":2001189728
+            , "id":4106247632
             , "start":"817"
             , "end":"817"
             , "details":
@@ -483,49 +568,24 @@
             , "type":"inst"
           }
           , {
-            "name":"<arg12>"
-            , "id":1998934560
-            , "start":"817"
-            , "end":"817"
+            "name":"<arg11>"
+            , "id":4103021968
+            , "start":"407"
+            , "end":"407"
             , "details":
             [
               {
                 "type":"table"
-                , "Instruction":"Input Synchronization for '<arg12>'"
-                , "Start Cycle":"603"
+                , "Instruction":"Input Synchronization for '<arg11>'"
+                , "Start Cycle":"193"
                 , "Latency":"0"
               }
-            ]
-            , "type":"inst"
-          }
-          , {
-            "name":"Ptr. Comp."
-            , "id":2002520384
-            , "start":"817"
-            , "end":"817"
-            , "details":
-            [
-              {
-                "type":"table"
-                , "Instruction":"Pointer Computation"
-                , "Start Cycle":"603"
-                , "Latency":"0"
-              }
-            ]
-            , "debug":
-            [
-              [
-                {
-                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
-                  , "line":894
-                }
-              ]
             ]
             , "type":"inst"
           }
           , {
             "name":"<arg8>"
-            , "id":1998824064
+            , "id":4102724400
             , "start":"407"
             , "end":"407"
             , "details":
@@ -541,7 +601,7 @@
           }
           , {
             "name":"Ptr. Comp."
-            , "id":2007691664
+            , "id":4103209408
             , "start":"407"
             , "end":"407"
             , "details":
@@ -566,7 +626,7 @@
           }
           , {
             "name":"Ptr. Comp."
-            , "id":2001480656
+            , "id":4108707584
             , "start":"407"
             , "end":"407"
             , "details":
@@ -591,7 +651,7 @@
           }
           , {
             "name":"LD"
-            , "id":2004407392
+            , "id":4106342704
             , "start":"407"
             , "end":"599"
             , "details":
@@ -612,7 +672,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":89
+                  , "line":84
                 }
               ]
             ]
@@ -620,7 +680,7 @@
           }
           , {
             "name":"Compare"
-            , "id":2006439648
+            , "id":4103527456
             , "start":"599"
             , "end":"599"
             , "details":
@@ -637,7 +697,58 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":89
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"And"
+            , "id":4108102432
+            , "start":"599"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit And"
+                , "Start Cycle":"385"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":84
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Xor"
+            , "id":4105774000
+            , "start":"599"
+            , "end":"599"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Xor"
+                , "Constant Operand":"1 (0x1)"
+                , "Start Cycle":"385"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
+                  , "line":86
                 }
               ]
             ]
@@ -645,7 +756,7 @@
           }
           , {
             "name":"Or"
-            , "id":1998962000
+            , "id":4108549696
             , "start":"599"
             , "end":"599"
             , "details":
@@ -662,7 +773,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":91
+                  , "line":86
                 }
               ]
             ]
@@ -670,7 +781,7 @@
           }
           , {
             "name":"Or"
-            , "id":2004481616
+            , "id":4101190656
             , "start":"599"
             , "end":"599"
             , "details":
@@ -687,7 +798,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":91
+                  , "line":86
                 }
               ]
             ]
@@ -695,7 +806,7 @@
           }
           , {
             "name":"ST"
-            , "id":2007963792
+            , "id":4101239808
             , "start":"599"
             , "end":"625"
             , "details":
@@ -716,7 +827,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":91
+                  , "line":86
                 }
               ]
             ]
@@ -724,7 +835,7 @@
           }
           , {
             "name":"LD"
-            , "id":2000018336
+            , "id":4102513168
             , "start":"625"
             , "end":"817"
             , "details":
@@ -745,7 +856,48 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":92
+                  , "line":87
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"<arg12>"
+            , "id":4100480512
+            , "start":"817"
+            , "end":"817"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Input Synchronization for '<arg12>'"
+                , "Start Cycle":"603"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Ptr. Comp."
+            , "id":4103264080
+            , "start":"817"
+            , "end":"817"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pointer Computation"
+                , "Start Cycle":"603"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.1.1/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":894
                 }
               ]
             ]
@@ -753,7 +905,7 @@
           }
           , {
             "name":"Ptr. Comp."
-            , "id":2001436944
+            , "id":4108730816
             , "start":"817"
             , "end":"817"
             , "details":
@@ -778,7 +930,7 @@
           }
           , {
             "name":"ST"
-            , "id":2006850912
+            , "id":4103852352
             , "start":"817"
             , "end":"843"
             , "details":
@@ -799,7 +951,7 @@
               [
                 {
                   "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                  , "line":92
+                  , "line":87
                 }
               ]
             ]
@@ -808,8 +960,8 @@
         ]
       }
       , {
-        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B2"
-        , "id":1996036016
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE70_32clES2_EUlT_E79_41.B2"
+        , "id":4097546160
         , "start":"843"
         , "end":"843"
         , "details":

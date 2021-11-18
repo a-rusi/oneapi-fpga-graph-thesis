@@ -77,8 +77,8 @@ module kernel_system
    logic [63:0] sys_cra_ring_readdata;
    logic sys_cra_ring_readdatavalid;
 
-   // INST main_fd6675_sys of main_fd6675_sys
-   main_fd6675_sys main_fd6675_sys
+   // INST main_4becdc_sys of main_4becdc_sys
+   main_4becdc_sys main_4becdc_sys
    (
       .clock(clock_reset_clk),
       .clock2x(clock_reset2x_clk),
