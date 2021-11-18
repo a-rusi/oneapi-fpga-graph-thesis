@@ -1,0 +1,3 @@
+Compiler Command: aoc -o /tmp/main-fd6675.aocr /tmp/main-53ce4d.spv -sycl -rtl -dep-files=/tmp/main-8616d0.d -output-report-folder=fpga_report.prj -g -hardware -board=intel_a10gx_pac:pac_a10
+System name: main_fd6675
+

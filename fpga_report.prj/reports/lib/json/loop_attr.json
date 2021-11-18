@@ -4,16 +4,16 @@
   , "nodes":
   [
     {
-      "name":"k0_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41"
-      , "id":1464246032
+      "name":"k0_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41"
+      , "id":1996582768
       , "clk":"No"
       , "fmax":"240.00"
       , "type":"kernel"
       , "children":
       [
         {
-          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41.B0"
-          , "id":1463695872
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B0"
+          , "id":1996032512
           , "af":"240.00"
           , "br":"0"
           , "ci":"0"
@@ -28,8 +28,8 @@
           , "type":"bb"
         }
         , {
-          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41.B1"
-          , "id":1463699296
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B1"
+          , "id":1996035936
           , "af":"240.00"
           , "br":"1"
           , "ci":"0"
@@ -53,15 +53,15 @@
             [
               {
                 "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                , "line":84
+                , "line":87
               }
             ]
           ]
           , "type":"loop"
         }
         , {
-          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41.B2"
-          , "id":1463699376
+          "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B2"
+          , "id":1996036016
           , "af":"240.00"
           , "br":"0"
           , "ci":"0"

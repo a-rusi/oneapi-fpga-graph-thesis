@@ -1,3 +1,0 @@
-Compiler Command: aoc -o /tmp/main-205f72.aocr /tmp/main-951877.spv -sycl -rtl -dep-files=/tmp/main-93de09.d -output-report-folder=fpga_report.prj -g -hardware -board=intel_a10gx_pac:pac_a10
-System name: main_205f72
-

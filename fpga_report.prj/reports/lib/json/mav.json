@@ -4,13 +4,13 @@
     {
       "type":"kernel"
       , "id":2
-      , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41"
+      , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41"
       , "children":
       [
         {
           "type":"bb"
           , "id":3
-          , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41.B0"
+          , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B0"
           , "children":
           [
             {
@@ -22,7 +22,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":82
+                    , "line":85
                   }
                 ]
               ]
@@ -129,7 +129,7 @@
         , {
           "type":"bb"
           , "id":4
-          , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41.B1"
+          , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B1"
           , "children":
           [
             {
@@ -141,7 +141,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":86
+                    , "line":89
                   }
                 ]
               ]
@@ -180,7 +180,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":86
+                    , "line":89
                   }
                 ]
               ]
@@ -219,7 +219,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":88
+                    , "line":91
                   }
                 ]
               ]
@@ -258,7 +258,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":89
+                    , "line":92
                   }
                 ]
               ]
@@ -297,7 +297,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":89
+                    , "line":92
                   }
                 ]
               ]
@@ -336,7 +336,7 @@
                 [
                   {
                     "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-                    , "line":84
+                    , "line":87
                   }
                 ]
               ]
@@ -380,7 +380,7 @@
         , {
           "type":"bb"
           , "id":5
-          , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41.B2"
+          , "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41.B2"
           , "details":
           [
             {
@@ -495,24 +495,8 @@
       , "to":12
     }
     , {
-      "from":17
-      , "to":9
-    }
-    , {
-      "from":12
-      , "to":17
-    }
-    , {
       "from":10
       , "to":17
-    }
-    , {
-      "from":17
-      , "to":8
-    }
-    , {
-      "from":17
-      , "to":6
     }
     , {
       "from":17
@@ -520,7 +504,23 @@
     }
     , {
       "from":17
+      , "to":8
+    }
+    , {
+      "from":17
       , "to":11
+    }
+    , {
+      "from":17
+      , "to":9
+    }
+    , {
+      "from":17
+      , "to":6
+    }
+    , {
+      "from":12
+      , "to":17
     }
   ]
 }

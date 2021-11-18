@@ -7,7 +7,7 @@
     , "children":
     [
       {
-        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41"
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41"
         , "data":
         [
           "NDRange"
@@ -42,7 +42,7 @@
     , "children":
     [
       {
-        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE72_32clES2_EUlT_E81_41"
+        "name":"_ZTSZZ3bfsvENKUlRN2cl4sycl7handlerEE75_32clES2_EUlT_E84_41"
         , "data":
         [6417, 16773, 97, 0, 73]
         , "debug":
@@ -113,7 +113,7 @@
           [
             {
               "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-              , "line":84
+              , "line":87
             }
             , {
               "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_vector.h"
@@ -127,7 +127,7 @@
           , [
             {
               "filename":"/home/alejandror/oneapi-fpga-graph-thesis/src/main.cpp"
-              , "line":84
+              , "line":87
             }
             , {
               "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_vector.h"
