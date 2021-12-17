@@ -1,0 +1,5173 @@
+{
+  "565124152":
+  {
+    "nodes":
+    [
+      {
+        "name":"const::'lambda'().B0"
+        , "id":565527312
+        , "start":"0"
+        , "end":"9"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Feedback"
+            , "id":613851808
+            , "start":"8"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Max Fanout":"1"
+                , "Start Cycle":"8"
+                , "Latency":"1"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 0"
+            , "id":566496064
+            , "start":"1"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_zn2cl4sycl8accessoriili1elns0_6access4modee1026elns2_6targete2014elns2_11placeholdere0ens0_3ext6oneapi22accessor_property_listijeeee6_initepu3as5ins0_5rangeili1eeese_ns0_2idili1eee_exit62_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"8"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"arg4"
+                , "id":611931392
+                , "start":"0"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg4'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"5"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg1"
+                , "id":611935360
+                , "start":"0"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg1'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"5"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":611938208
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"6"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":611971696
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg12"
+                , "id":611940016
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg12'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg9"
+                , "id":611946544
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg9'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":611949392
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"6"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":611973920
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg16"
+                , "id":611951200
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg16'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg13"
+                , "id":611957728
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg13'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":611960576
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"6"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":611976144
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg0"
+                , "id":611962384
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg0'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":611965136
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":611978368
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg0"
+                , "id":611965488
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg0'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":611967712
+                , "start":"2"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg0"
+                , "id":611968064
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg0'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":611970288
+                , "start":"3"
+                , "end":"4"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":611970640
+                , "start":"4"
+                , "end":"4"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"-1 (0xFFFFFFFF)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":611971344
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"33-bit Integer Add"
+                    , "Constant Operand":"-1 (0x1FFFFFFFF)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":611981008
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610592528
+                , "start":"5"
+                , "end":"9"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"5"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"8"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B1"
+        , "id":565162928
+        , "start":"9"
+        , "end":"16"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 1"
+            , "id":567848576
+            , "start":"10"
+            , "end":"16"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_lr_ph227_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter7711_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"6"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":611988512
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":611990736
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":611999936
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":611991088
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":611993312
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"8-bit Select"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":611997712
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":611993664
+                , "start":"11"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"8-bit And"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"1"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":611994016
+                , "start":"12"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"8-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":611994368
+                , "start":"12"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":611997008
+                , "start":"12"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit And"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":114
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":612002160
+                , "start":"12"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":114
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Xor"
+                , "id":611997360
+                , "start":"12"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Xor"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":612004800
+                , "start":"12"
+                , "end":"12"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610636960
+                , "start":"12"
+                , "end":"16"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"3"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"8"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 2"
+            , "id":566431200
+            , "start":"11"
+            , "end":"15"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_lr_ph227_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c1_enter_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve3"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"2"
+                , "Cluster Latency":"4"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"+"
+                , "id":612012304
+                , "start":"11"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"16-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610644384
+                , "start":"11"
+                , "end":"15"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"2"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"64"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":613752064
+            , "start":"15"
+            , "end":"16"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Max Fanout":"3"
+                , "Start Cycle":"6"
+                , "Latency":"1"
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B3"
+        , "id":565163088
+        , "start":"16"
+        , "end":"439"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 4"
+            , "id":570464800
+            , "start":"16"
+            , "end":"24"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_lr_ph216_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter8412_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve4"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"8"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":612037552
+                , "start":"20"
+                , "end":"20"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612041888
+                , "start":"20"
+                , "end":"20"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":114
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Feedback"
+                , "id":612056336
+                , "start":"20"
+                , "end":"20"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Unknown variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"32"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Feedback"
+                , "id":612053856
+                , "start":"20"
+                , "end":"20"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Unknown variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"32"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Global variable"
+                , "id":612050848
+                , "start":"20"
+                , "end":"20"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"16"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610667248
+                , "start":"20"
+                , "end":"24"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"224"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Global variable"
+            , "id":614139536
+            , "start":"433"
+            , "end":"434"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"1"
+                , "Start Cycle":"417"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":121
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Global variable"
+            , "id":614096960
+            , "start":"30"
+            , "end":"31"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"3"
+                , "Start Cycle":"14"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":120
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 5"
+            , "id":570882576
+            , "start":"31"
+            , "end":"35"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c4_in_lr_ph216_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c4_enter_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve9"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"15"
+                , "Cluster Latency":"4"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Or"
+                , "id":612072464
+                , "start":"31"
+                , "end":"31"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"15"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":120
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610678320
+                , "start":"31"
+                , "end":"35"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"15"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"16"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 6"
+            , "id":570917936
+            , "start":"24"
+            , "end":"35"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_lr_ph216_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c1_enter88_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve12"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"8"
+                , "Cluster Latency":"11"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Global variable"
+                , "id":612078864
+                , "start":"28"
+                , "end":"28"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"32"
+                    , "Max Fanout":"3"
+                    , "Start Cycle":"12"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":112
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":612099872
+                , "start":"28"
+                , "end":"28"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"12"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":112
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612080208
+                , "start":"31"
+                , "end":"31"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"15"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":612082432
+                , "start":"28"
+                , "end":"31"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"12"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1550
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612084240
+                , "start":"31"
+                , "end":"31"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"15"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg8"
+                , "id":612086880
+                , "start":"16"
+                , "end":"27"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg8'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"11"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg5"
+                , "id":612093408
+                , "start":"16"
+                , "end":"30"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg5'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"14"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":612096256
+                , "start":"27"
+                , "end":"31"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"21"
+                    , "Start Cycle":"11"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":612098064
+                , "start":"28"
+                , "end":"31"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"21"
+                    , "Start Cycle":"12"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610691120
+                , "start":"31"
+                , "end":"35"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"15"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"256"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":611070672
+            , "start":"35"
+            , "end":"222"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"19"
+                , "Latency":"187"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":114
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 7"
+            , "id":571210144
+            , "start":"222"
+            , "end":"227"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c2_in_lr_ph216_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c2_enter_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve16"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"206"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":612110832
+                , "start":"223"
+                , "end":"223"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"207"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":612113472
+                , "start":"223"
+                , "end":"223"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"207"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":114
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610700992
+                , "start":"223"
+                , "end":"227"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"207"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"128"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":611209184
+            , "start":"227"
+            , "end":"434"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"128 bits"
+                , "LSU Style":"Burst-coalesced non-aligned"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"2"
+                , "Start Cycle":"211"
+                , "Latency":"207"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":783
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 8"
+            , "id":571343168
+            , "start":"434"
+            , "end":"439"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c3_in_lr_ph216_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c3_enter_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve20"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"418"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Or"
+                , "id":612121904
+                , "start":"435"
+                , "end":"435"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"419"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                      , "line":886
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610710144
+                , "start":"435"
+                , "end":"439"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"419"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"256"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B4"
+        , "id":565163168
+        , "start":"439"
+        , "end":"1102"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"FFwd Dest"
+            , "id":611207328
+            , "start":"1066"
+            , "end":"1067"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"FFwd Destination"
+                , "Max Fanout":"1"
+                , "Start Cycle":"627"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                  , "line":902
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 9"
+            , "id":571706064
+            , "start":"439"
+            , "end":"453"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_lr_ph_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter9915_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve17"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"14"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Or"
+                , "id":612180416
+                , "start":"446"
+                , "end":"446"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"7"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Feedback"
+                , "id":612185056
+                , "start":"443"
+                , "end":"443"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Unknown variable"
+                    , "Feedback FIFO Depth":"648"
+                    , "Feedback FIFO Width":"32"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Global variable"
+                , "id":612182576
+                , "start":"447"
+                , "end":"447"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Feedback FIFO Depth":"648"
+                    , "Feedback FIFO Width":"16"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"8"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":612154048
+                , "start":"443"
+                , "end":"444"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":121
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610733456
+                , "start":"449"
+                , "end":"453"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"10"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"384"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Global variable"
+            , "id":614171056
+            , "start":"844"
+            , "end":"845"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"2"
+                , "Start Cycle":"405"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":112
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Global variable"
+            , "id":613653216
+            , "start":"457"
+            , "end":"458"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"2"
+                , "Start Cycle":"18"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":120
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":611194816
+            , "start":"458"
+            , "end":"459"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Max Fanout":"1"
+                , "Start Cycle":"19"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":120
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Global variable"
+            , "id":611285744
+            , "start":"453"
+            , "end":"454"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"2"
+                , "Start Cycle":"14"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":121
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 10"
+            , "id":572442240
+            , "start":"454"
+            , "end":"458"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c3_in_lr_ph_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c3_enter125_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve26"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"15"
+                , "Cluster Latency":"4"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Or"
+                , "id":612214512
+                , "start":"454"
+                , "end":"454"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"15"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":120
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610748752
+                , "start":"454"
+                , "end":"458"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"15"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"192"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 11"
+            , "id":572481920
+            , "start":"458"
+            , "end":"462"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c4_in_lr_ph_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c4_enter135_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve29"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"19"
+                , "Cluster Latency":"4"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Or"
+                , "id":612222800
+                , "start":"458"
+                , "end":"458"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"19"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":120
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610754640
+                , "start":"458"
+                , "end":"462"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"19"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"16"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 12"
+            , "id":572556736
+            , "start":"462"
+            , "end":"466"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c5_in_lr_ph_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c5_enter_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve33"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"23"
+                , "Cluster Latency":"4"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Or"
+                , "id":612229904
+                , "start":"462"
+                , "end":"462"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"23"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":120
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610763360
+                , "start":"462"
+                , "end":"466"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"23"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"16"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Or"
+            , "id":611117168
+            , "start":"466"
+            , "end":"466"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Max Fanout":"1"
+                , "Start Cycle":"27"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":614095872
+            , "start":"466"
+            , "end":"653"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"2"
+                , "Start Cycle":"27"
+                , "Latency":"187"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":118
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Compare"
+            , "id":611138384
+            , "start":"653"
+            , "end":"653"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"32-bit Integer Compare"
+                , "Max Fanout":"2"
+                , "Start Cycle":"214"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":118
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 13"
+            , "id":572664928
+            , "start":"653"
+            , "end":"658"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_lr_ph_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c1_enter143_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve40"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"214"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Xor"
+                , "id":612241744
+                , "start":"653"
+                , "end":"653"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Xor"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"214"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":118
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":612242096
+                , "start":"653"
+                , "end":"654"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"214"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":118
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612237712
+                , "start":"654"
+                , "end":"654"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"215"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":612239936
+                , "start":"654"
+                , "end":"654"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"215"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1550
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610773280
+                , "start":"654"
+                , "end":"658"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"215"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"192"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Or"
+            , "id":610871600
+            , "start":"658"
+            , "end":"658"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Max Fanout":"1"
+                , "Start Cycle":"219"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":610873584
+            , "start":"658"
+            , "end":"845"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"219"
+                , "Latency":"187"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":118
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Global variable"
+            , "id":610861456
+            , "start":"844"
+            , "end":"845"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"1"
+                , "Start Cycle":"405"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":121
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 14"
+            , "id":572799648
+            , "start":"845"
+            , "end":"850"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c2_in_lr_ph_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c2_enter153_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve45"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"406"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Or"
+                , "id":612253632
+                , "start":"845"
+                , "end":"846"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"406"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":121
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":612251872
+                , "start":"845"
+                , "end":"845"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"406"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":118
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":612252224
+                , "start":"845"
+                , "end":"846"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit And"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"406"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":118
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Xor"
+                , "id":612252576
+                , "start":"846"
+                , "end":"846"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Xor"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"407"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":120
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":612252928
+                , "start":"846"
+                , "end":"846"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"407"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":120
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611816176
+                , "start":"846"
+                , "end":"850"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"407"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"24"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Or"
+            , "id":613664208
+            , "start":"850"
+            , "end":"850"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Max Fanout":"2"
+                , "Start Cycle":"411"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"ST"
+            , "id":611422864
+            , "start":"850"
+            , "end":"880"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"2"
+                , "Start Cycle":"411"
+                , "Latency":"30"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":120
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":613659120
+            , "start":"880"
+            , "end":"880"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Max Fanout":"1"
+                , "Start Cycle":"441"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":120
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Or"
+            , "id":611273504
+            , "start":"850"
+            , "end":"850"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Max Fanout":"2"
+                , "Start Cycle":"411"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":610834704
+            , "start":"880"
+            , "end":"1067"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"441"
+                , "Latency":"187"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":121
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 15"
+            , "id":572997744
+            , "start":"1067"
+            , "end":"1071"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c6_in_lr_ph_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c6_enter_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve54"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"628"
+                , "Cluster Latency":"4"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Ptr. Comp."
+                , "id":612262544
+                , "start":"1067"
+                , "end":"1067"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"628"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1550
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611827632
+                , "start":"1067"
+                , "end":"1071"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"628"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"128"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Or"
+            , "id":613671936
+            , "start":"1071"
+            , "end":"1071"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"1-bit Or"
+                , "Max Fanout":"1"
+                , "Start Cycle":"632"
+                , "Latency":"0"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"ST"
+            , "id":613723264
+            , "start":"1071"
+            , "end":"1101"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"2"
+                , "Start Cycle":"632"
+                , "Latency":"30"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":121
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B5"
+        , "id":565163248
+        , "start":"1102"
+        , "end":"1103"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+      }
+      , {
+        "name":"const::'lambda'().B2"
+        , "id":565163008
+        , "start":"1103"
+        , "end":"1109"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 3"
+            , "id":570333872
+            , "start":"1103"
+            , "end":"1109"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_lr_ph220_preheader_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter80_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"6"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"wg.limiter.exit"
+                , "id":612019264
+                , "start":"1104"
+                , "end":"1105"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"1"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":610649920
+                , "start":"1105"
+                , "end":"1109"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"2"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"8"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B7"
+        , "id":565163408
+        , "start":"1109"
+        , "end":"1313"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 16"
+            , "id":573410016
+            , "start":"1109"
+            , "end":"1118"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_lr_ph220_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter16313_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve2"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"9"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":612282288
+                , "start":"1113"
+                , "end":"1113"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612287616
+                , "start":"1114"
+                , "end":"1114"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612291648
+                , "start":"1114"
+                , "end":"1114"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612295344
+                , "start":"1113"
+                , "end":"1113"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":114
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":612297984
+                , "start":"1113"
+                , "end":"1113"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit And"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":126
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Global variable"
+                , "id":612305440
+                , "start":"1114"
+                , "end":"1114"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"16"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Global variable"
+                , "id":612286272
+                , "start":"1113"
+                , "end":"1114"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"32"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":126
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":612294288
+                , "start":"1114"
+                , "end":"1114"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":126
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":612289840
+                , "start":"1114"
+                , "end":"1114"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1550
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":612285920
+                , "start":"1113"
+                , "end":"1113"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"33-bit Select"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":126
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611855568
+                , "start":"1114"
+                , "end":"1118"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"192"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":613748784
+            , "start":"1118"
+            , "end":"1305"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"9"
+                , "Latency":"187"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":128
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 17"
+            , "id":573816592
+            , "start":"1305"
+            , "end":"1313"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_lr_ph220_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c1_enter182_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve6"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"196"
+                , "Cluster Latency":"8"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Feedback"
+                , "id":612320384
+                , "start":"1309"
+                , "end":"1309"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Unknown variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"8"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"200"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":612320032
+                , "start":"1305"
+                , "end":"1306"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"196"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":128
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":612321376
+                , "start":"1309"
+                , "end":"1309"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"8-bit Select"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"200"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":128
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":612323216
+                , "start":"1309"
+                , "end":"1309"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"200"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":128
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611865904
+                , "start":"1309"
+                , "end":"1313"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"200"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"8"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B6"
+        , "id":565163328
+        , "start":"1313"
+        , "end":"1313"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+      }
+      , {
+        "name":"const::'lambda'().B8"
+        , "id":565163488
+        , "start":"1313"
+        , "end":"1569"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 19"
+            , "id":574079408
+            , "start":"1314"
+            , "end":"1319"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c2_in_lr_ph223_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c2_enter191_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve4"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":612337936
+                , "start":"1315"
+                , "end":"1315"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611880176
+                , "start":"1315"
+                , "end":"1319"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"2"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"16"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 18"
+            , "id":574032464
+            , "start":"1503"
+            , "end":"1508"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_lr_ph223_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c1_enter18714_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve2"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"190"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":612329952
+                , "start":"1504"
+                , "end":"1504"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"191"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611874096
+                , "start":"1504"
+                , "end":"1508"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"191"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"16"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"FFwd Dest"
+            , "id":583666528
+            , "start":"1314"
+            , "end":"1315"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"FFwd Destination"
+                , "Max Fanout":"1"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":107
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"FFwd Dest"
+            , "id":582105472
+            , "start":"1314"
+            , "end":"1315"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"FFwd Destination"
+                , "Max Fanout":"1"
+                , "Start Cycle":"1"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":114
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 20"
+            , "id":574431072
+            , "start":"1315"
+            , "end":"1321"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_lr_ph223_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter197_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve21"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"2"
+                , "Cluster Latency":"6"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Global variable"
+                , "id":612602720
+                , "start":"1316"
+                , "end":"1316"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":135
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":612616224
+                , "start":"1317"
+                , "end":"1317"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":135
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612605520
+                , "start":"1317"
+                , "end":"1317"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":612607744
+                , "start":"1317"
+                , "end":"1317"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1550
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612609552
+                , "start":"1317"
+                , "end":"1317"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612612192
+                , "start":"1317"
+                , "end":"1317"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":902
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":612614416
+                , "start":"1317"
+                , "end":"1317"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2021.4.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1550
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611907136
+                , "start":"1317"
+                , "end":"1321"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"256"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Global variable"
+            , "id":583674608
+            , "start":"1566"
+            , "end":"1567"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"1"
+                , "Start Cycle":"253"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":107
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Global variable"
+            , "id":583016912
+            , "start":"1320"
+            , "end":"1321"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"1"
+                , "Start Cycle":"7"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":137
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":611128144
+            , "start":"1321"
+            , "end":"1508"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"8"
+                , "Latency":"187"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":137
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Global variable"
+            , "id":569574480
+            , "start":"1507"
+            , "end":"1508"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Global variable"
+                , "Max Fanout":"1"
+                , "Start Cycle":"194"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":138
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"ST"
+            , "id":610530224
+            , "start":"1508"
+            , "end":"1538"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"2"
+                , "Start Cycle":"195"
+                , "Latency":"30"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":137
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"ST"
+            , "id":570689104
+            , "start":"1538"
+            , "end":"1568"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"2"
+                , "Start Cycle":"225"
+                , "Latency":"30"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":138
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B9"
+        , "id":565163568
+        , "start":"1569"
+        , "end":"1576"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 21"
+            , "id":574865648
+            , "start":"1569"
+            , "end":"1576"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_loopexit208_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve_s_c0_enter207_k0_ztszz12parallel_bfsrst6vectoris_iisaiieesais1_eeenkulrn2cl4sycl7handleree_cles8_eulve0"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"7"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":612626608
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612628832
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":114
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612631472
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":128
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":612633696
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"8-bit Select"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":612642192
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612634048
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":612636272
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":612644416
+                , "start":"1570"
+                , "end":"1570"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg0"
+                , "id":612636624
+                , "start":"1569"
+                , "end":"1571"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg0'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":612638848
+                , "start":"1571"
+                , "end":"1572"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":612639200
+                , "start":"1572"
+                , "end":"1572"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":612641840
+                , "start":"1572"
+                , "end":"1572"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit And"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                      , "line":107
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":611925504
+                , "start":"1572"
+                , "end":"1576"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"3"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"16"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"const::'lambda'().B10"
+        , "id":565163648
+        , "start":"1576"
+        , "end":"1577"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":612639200
+        , "to":612641840
+      }
+      , {
+        "from":612636624
+        , "to":612638848
+      }
+      , {
+        "from":612634048
+        , "to":612636272
+      }
+      , {
+        "from":612633696
+        , "to":612642192
+      }
+      , {
+        "from":565163568
+        , "to":565162928
+      }
+      , {
+        "from":565163568
+        , "to":565163648
+      }
+      , {
+        "from":569574480
+        , "to":610530224
+      }
+      , {
+        "from":611128144
+        , "to":610530224
+      }
+      , {
+        "from":612612192
+        , "to":612614416
+      }
+      , {
+        "from":612609552
+        , "to":611907136
+      }
+      , {
+        "from":612605520
+        , "to":612607744
+      }
+      , {
+        "from":612121904
+        , "to":610710144
+      }
+      , {
+        "from":612182576
+        , "to":610733456
+      }
+      , {
+        "from":611209184
+        , "to":571343168
+      }
+      , {
+        "from":612098064
+        , "to":610691120
+      }
+      , {
+        "from":611988512
+        , "to":611990736
+      }
+      , {
+        "from":612096256
+        , "to":612098064
+      }
+      , {
+        "from":572442240
+        , "to":610834704
+      }
+      , {
+        "from":572442240
+        , "to":572481920
+      }
+      , {
+        "from":572442240
+        , "to":613659120
+      }
+      , {
+        "from":572442240
+        , "to":614095872
+      }
+      , {
+        "from":612093408
+        , "to":612096256
+      }
+      , {
+        "from":612082432
+        , "to":610691120
+      }
+      , {
+        "from":612050848
+        , "to":610667248
+      }
+      , {
+        "from":612638848
+        , "to":612641840
+      }
+      , {
+        "from":573410016
+        , "to":573816592
+      }
+      , {
+        "from":573410016
+        , "to":613748784
+      }
+      , {
+        "from":612041888
+        , "to":610667248
+      }
+      , {
+        "from":570464800
+        , "to":570917936
+      }
+      , {
+        "from":570464800
+        , "to":614096960
+      }
+      , {
+        "from":570464800
+        , "to":614139536
+      }
+      , {
+        "from":611194816
+        , "to":572556736
+      }
+      , {
+        "from":612056336
+        , "to":610667248
+      }
+      , {
+        "from":611965488
+        , "to":611967712
+      }
+      , {
+        "from":612628832
+        , "to":612633696
+      }
+      , {
+        "from":612084240
+        , "to":610691120
+      }
+      , {
+        "from":612252576
+        , "to":612252928
+      }
+      , {
+        "from":612626608
+        , "to":612633696
+      }
+      , {
+        "from":611997008
+        , "to":611997360
+      }
+      , {
+        "from":611997008
+        , "to":612002160
+      }
+      , {
+        "from":611970288
+        , "to":611970640
+      }
+      , {
+        "from":611994016
+        , "to":611997008
+      }
+      , {
+        "from":612239936
+        , "to":610773280
+      }
+      , {
+        "from":611962384
+        , "to":611965136
+      }
+      , {
+        "from":612641840
+        , "to":611925504
+      }
+      , {
+        "from":612253632
+        , "to":611816176
+      }
+      , {
+        "from":572997744
+        , "to":613671936
+      }
+      , {
+        "from":572997744
+        , "to":613723264
+      }
+      , {
+        "from":565163088
+        , "to":565163168
+      }
+      , {
+        "from":612320384
+        , "to":612321376
+      }
+      , {
+        "from":612636272
+        , "to":612638848
+      }
+      , {
+        "from":612636272
+        , "to":612644416
+      }
+      , {
+        "from":611960576
+        , "to":611976144
+      }
+      , {
+        "from":565163008
+        , "to":565163408
+      }
+      , {
+        "from":612113472
+        , "to":610700992
+      }
+      , {
+        "from":612110832
+        , "to":612113472
+      }
+      , {
+        "from":611970640
+        , "to":611971344
+      }
+      , {
+        "from":611997360
+        , "to":612004800
+      }
+      , {
+        "from":611957728
+        , "to":611960576
+      }
+      , {
+        "from":612072464
+        , "to":610678320
+      }
+      , {
+        "from":566431200
+        , "to":613752064
+      }
+      , {
+        "from":611971344
+        , "to":611981008
+      }
+      , {
+        "from":612321376
+        , "to":612323216
+      }
+      , {
+        "from":611967712
+        , "to":611970288
+      }
+      , {
+        "from":611935360
+        , "to":611938208
+      }
+      , {
+        "from":611993312
+        , "to":611993664
+      }
+      , {
+        "from":611993312
+        , "to":611997712
+      }
+      , {
+        "from":611994368
+        , "to":611997008
+      }
+      , {
+        "from":610530224
+        , "to":570689104
+      }
+      , {
+        "from":565163248
+        , "to":565163008
+      }
+      , {
+        "from":565163248
+        , "to":565163088
+      }
+      , {
+        "from":612080208
+        , "to":612082432
+      }
+      , {
+        "from":611940016
+        , "to":611949392
+      }
+      , {
+        "from":571210144
+        , "to":571343168
+      }
+      , {
+        "from":571210144
+        , "to":611209184
+      }
+      , {
+        "from":565527312
+        , "to":565162928
+      }
+      , {
+        "from":612229904
+        , "to":610763360
+      }
+      , {
+        "from":612631472
+        , "to":612633696
+      }
+      , {
+        "from":612086880
+        , "to":612096256
+      }
+      , {
+        "from":612242096
+        , "to":610773280
+      }
+      , {
+        "from":612614416
+        , "to":611907136
+      }
+      , {
+        "from":611951200
+        , "to":611960576
+      }
+      , {
+        "from":583666528
+        , "to":574431072
+      }
+      , {
+        "from":611931392
+        , "to":611938208
+      }
+      , {
+        "from":612291648
+        , "to":611855568
+      }
+      , {
+        "from":570882576
+        , "to":611070672
+      }
+      , {
+        "from":570882576
+        , "to":611209184
+      }
+      , {
+        "from":574032464
+        , "to":610530224
+      }
+      , {
+        "from":583016912
+        , "to":611128144
+      }
+      , {
+        "from":611968064
+        , "to":611970288
+      }
+      , {
+        "from":613671936
+        , "to":613723264
+      }
+      , {
+        "from":565162928
+        , "to":565163088
+      }
+      , {
+        "from":612012304
+        , "to":610644384
+      }
+      , {
+        "from":611990736
+        , "to":611999936
+      }
+      , {
+        "from":612295344
+        , "to":612297984
+      }
+      , {
+        "from":611991088
+        , "to":611993312
+      }
+      , {
+        "from":612053856
+        , "to":610667248
+      }
+      , {
+        "from":570917936
+        , "to":611070672
+      }
+      , {
+        "from":570917936
+        , "to":571210144
+      }
+      , {
+        "from":572664928
+        , "to":572799648
+      }
+      , {
+        "from":572664928
+        , "to":610871600
+      }
+      , {
+        "from":572664928
+        , "to":610873584
+      }
+      , {
+        "from":572664928
+        , "to":611422864
+      }
+      , {
+        "from":611070672
+        , "to":571210144
+      }
+      , {
+        "from":612305440
+        , "to":611855568
+      }
+      , {
+        "from":614096960
+        , "to":570882576
+      }
+      , {
+        "from":611993664
+        , "to":611994016
+      }
+      , {
+        "from":611207328
+        , "to":572997744
+      }
+      , {
+        "from":571706064
+        , "to":572799648
+      }
+      , {
+        "from":571706064
+        , "to":572442240
+      }
+      , {
+        "from":571706064
+        , "to":610861456
+      }
+      , {
+        "from":571706064
+        , "to":572481920
+      }
+      , {
+        "from":571706064
+        , "to":611117168
+      }
+      , {
+        "from":571706064
+        , "to":611194816
+      }
+      , {
+        "from":571706064
+        , "to":611285744
+      }
+      , {
+        "from":571706064
+        , "to":572664928
+      }
+      , {
+        "from":571706064
+        , "to":613653216
+      }
+      , {
+        "from":571706064
+        , "to":614171056
+      }
+      , {
+        "from":612262544
+        , "to":611827632
+      }
+      , {
+        "from":612154048
+        , "to":610733456
+      }
+      , {
+        "from":613653216
+        , "to":572481920
+      }
+      , {
+        "from":613653216
+        , "to":611194816
+      }
+      , {
+        "from":572481920
+        , "to":572556736
+      }
+      , {
+        "from":572481920
+        , "to":613723264
+      }
+      , {
+        "from":611965136
+        , "to":611978368
+      }
+      , {
+        "from":611285744
+        , "to":572799648
+      }
+      , {
+        "from":611285744
+        , "to":572556736
+      }
+      , {
+        "from":611285744
+        , "to":572442240
+      }
+      , {
+        "from":574431072
+        , "to":570689104
+      }
+      , {
+        "from":574431072
+        , "to":610530224
+      }
+      , {
+        "from":574431072
+        , "to":611128144
+      }
+      , {
+        "from":612214512
+        , "to":610748752
+      }
+      , {
+        "from":572799648
+        , "to":572997744
+      }
+      , {
+        "from":572799648
+        , "to":611273504
+      }
+      , {
+        "from":572799648
+        , "to":611422864
+      }
+      , {
+        "from":572799648
+        , "to":613664208
+      }
+      , {
+        "from":572799648
+        , "to":613671936
+      }
+      , {
+        "from":612185056
+        , "to":610733456
+      }
+      , {
+        "from":612222800
+        , "to":610754640
+      }
+      , {
+        "from":574079408
+        , "to":570689104
+      }
+      , {
+        "from":611117168
+        , "to":614095872
+      }
+      , {
+        "from":611138384
+        , "to":572799648
+      }
+      , {
+        "from":611138384
+        , "to":572664928
+      }
+      , {
+        "from":612241744
+        , "to":612242096
+      }
+      , {
+        "from":612289840
+        , "to":611855568
+      }
+      , {
+        "from":612337936
+        , "to":611880176
+      }
+      , {
+        "from":611946544
+        , "to":611949392
+      }
+      , {
+        "from":612237712
+        , "to":612239936
+      }
+      , {
+        "from":610861456
+        , "to":572799648
+      }
+      , {
+        "from":610871600
+        , "to":610873584
+      }
+      , {
+        "from":610873584
+        , "to":572799648
+      }
+      , {
+        "from":612607744
+        , "to":611907136
+      }
+      , {
+        "from":612251872
+        , "to":612252224
+      }
+      , {
+        "from":572556736
+        , "to":610873584
+      }
+      , {
+        "from":572556736
+        , "to":611117168
+      }
+      , {
+        "from":572556736
+        , "to":572664928
+      }
+      , {
+        "from":572556736
+        , "to":614095872
+      }
+      , {
+        "from":612252224
+        , "to":612252576
+      }
+      , {
+        "from":612252928
+        , "to":611816176
+      }
+      , {
+        "from":614171056
+        , "to":611422864
+      }
+      , {
+        "from":613664208
+        , "to":611422864
+      }
+      , {
+        "from":612037552
+        , "to":610667248
+      }
+      , {
+        "from":611422864
+        , "to":613659120
+      }
+      , {
+        "from":614095872
+        , "to":611138384
+      }
+      , {
+        "from":614095872
+        , "to":572664928
+      }
+      , {
+        "from":613659120
+        , "to":610834704
+      }
+      , {
+        "from":582105472
+        , "to":574431072
+      }
+      , {
+        "from":612297984
+        , "to":611855568
+      }
+      , {
+        "from":612297984
+        , "to":612285920
+      }
+      , {
+        "from":611273504
+        , "to":610834704
+      }
+      , {
+        "from":610834704
+        , "to":572997744
+      }
+      , {
+        "from":612078864
+        , "to":610691120
+      }
+      , {
+        "from":612078864
+        , "to":612082432
+      }
+      , {
+        "from":612078864
+        , "to":612098064
+      }
+      , {
+        "from":612078864
+        , "to":612099872
+      }
+      , {
+        "from":611949392
+        , "to":611973920
+      }
+      , {
+        "from":565163408
+        , "to":565163328
+      }
+      , {
+        "from":565163168
+        , "to":565163248
+      }
+      , {
+        "from":612287616
+        , "to":612289840
+      }
+      , {
+        "from":612286272
+        , "to":612289840
+      }
+      , {
+        "from":612286272
+        , "to":612294288
+      }
+      , {
+        "from":613748784
+        , "to":573816592
+      }
+      , {
+        "from":612329952
+        , "to":611874096
+      }
+      , {
+        "from":612282288
+        , "to":612285920
+      }
+      , {
+        "from":612320032
+        , "to":612321376
+      }
+      , {
+        "from":611938208
+        , "to":611971696
+      }
+      , {
+        "from":565163328
+        , "to":565163488
+      }
+      , {
+        "from":565163488
+        , "to":565163568
+      }
+      , {
+        "from":612602720
+        , "to":612607744
+      }
+      , {
+        "from":612602720
+        , "to":612614416
+      }
+      , {
+        "from":612602720
+        , "to":612616224
+      }
+    ]
+  }
+}
