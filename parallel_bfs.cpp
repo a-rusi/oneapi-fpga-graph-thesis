@@ -97,8 +97,7 @@ vector<int> parallel_bfs(vector<vector<int>> &graph)
         accessor graph_access(graph_buffer, h, read_only);
         accessor parents_access(parent_buffer, h);
         accessor frontier_access(frontier_buffer, h);
-        accessor next_frontier_access(next_frontier_buffer, h, write_only);
-        accessor finish_vector_access(finish_vector_buffer, h, write_only);
+        accessor next_frontier_access(next_frontier_buffer, h);
 
         // iterate over the frontier, update node parents
 
@@ -115,7 +114,7 @@ vector<int> parallel_bfs(vector<vector<int>> &graph)
                         {
                             for (auto &neighbor : graph_access[i])
                             {
-                                if (neighbor != -1 && parents_access[neighbor] == -1)
+                                if (neighbor != -1)
                                 {
                                     parents_access[neighbor] = i;
                                     next_frontier_access[neighbor] = 1;
@@ -129,11 +128,6 @@ vector<int> parallel_bfs(vector<vector<int>> &graph)
                         {
                             all_nodes_visited = false;
                         }
-                    }
-
-                    // swap frontier vectors
-                    for (int i = 0; i < nodes; i++)
-                    {
                         frontier_access[i] = next_frontier_access[i];
                         next_frontier_access[i] = -1;
                     }
