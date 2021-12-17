@@ -1,0 +1,1468 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2522212976"
+      , "dst":"2520478608"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: const::'lambda'().B4(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"113"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2522212976
+          , "start":"14.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"const::'lambda'().B4"
+          , "id":2483533760
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":113
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2520478608
+          , "end":"1.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2483533760
+          , "to":2483533760
+        }
+        , {
+          "from":2522212976
+          , "to":2483533760
+        }
+        , {
+          "from":2483533760
+          , "to":2520478608
+        }
+        , {
+          "from":2522212976
+          , "to":2520478608
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2522213344"
+      , "dst":"2520479056"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: const::'lambda'().B4(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"113"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2522213344
+          , "start":"417.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"const::'lambda'().B4"
+          , "id":2483533760
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":113
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2520479056
+          , "end":"1.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2483533760
+          , "to":2483533760
+        }
+        , {
+          "from":2522213344
+          , "to":2483533760
+        }
+        , {
+          "from":2483533760
+          , "to":2520479056
+        }
+        , {
+          "from":2522213344
+          , "to":2520479056
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2520578512"
+      , "dst":"2520478160"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"119"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"117"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"119"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"119"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"120"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"120"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"120"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2520578512
+          , "start":"14.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":2520126000
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":2522195776
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2485356704
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":117
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2493828656
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":2520155088
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":2493239920
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2493997008
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":2520161840
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":2494004624
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2493418752
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2520478160
+          , "end":"475.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2522195776
+          , "to":2485356704
+        }
+        , {
+          "from":2493239920
+          , "to":2493997008
+        }
+        , {
+          "from":2494004624
+          , "to":2493418752
+        }
+        , {
+          "from":2493418752
+          , "to":2520478160
+        }
+        , {
+          "from":2520578512
+          , "to":2520478160
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2524211216"
+      , "dst":"2490907488"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"120"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"117"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"119"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                  , "line":"783"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"113"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2524211216
+          , "start":"14.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2493418752
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2485356704
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":117
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2493828656
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2522389072
+          , "debug":
+          [
+            [
+              {
+                "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                , "line":783
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2520448240
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":113
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2490907488
+          , "end":"245.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2524211216
+          , "to":2493418752
+        }
+        , {
+          "from":2524211216
+          , "to":2485356704
+        }
+        , {
+          "from":2493418752
+          , "to":2493828656
+        }
+        , {
+          "from":2485356704
+          , "to":2493828656
+        }
+        , {
+          "from":2493418752
+          , "to":2522389072
+        }
+        , {
+          "from":2485356704
+          , "to":2522389072
+        }
+        , {
+          "from":2493418752
+          , "to":2520448240
+        }
+        , {
+          "from":2485356704
+          , "to":2520448240
+        }
+        , {
+          "from":2493828656
+          , "to":2490907488
+        }
+        , {
+          "from":2522389072
+          , "to":2490907488
+        }
+        , {
+          "from":2520448240
+          , "to":2490907488
+        }
+        , {
+          "from":2524211216
+          , "to":2490907488
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2522242512"
+      , "dst":"2520477712"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"119"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"120"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2522242512
+          , "start":"14.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2493828656
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":119
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2493997008
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2520477712
+          , "end":"475.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":120
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2522242512
+          , "to":2493828656
+        }
+        , {
+          "from":2493828656
+          , "to":2493997008
+        }
+        , {
+          "from":2493997008
+          , "to":2520477712
+        }
+        , {
+          "from":2522242512
+          , "to":2520477712
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2493434928"
+      , "dst":"2522108384"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"131"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"127"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"FFwd Dest(%L)"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"131"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"FFwd Dest(%L)"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"132"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2493434928
+          , "start":"3.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":2520179168
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2488542624
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":127
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"FFwd Dest"
+          , "id":2520223552
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2522047488
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"FFwd Dest"
+          , "id":2520245936
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2522034864
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2522108384
+          , "end":"266.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2522034864
+          , "to":2522108384
+        }
+        , {
+          "from":2493434928
+          , "to":2522108384
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2493520256"
+      , "dst":"2523305200"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"131"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"127"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"131"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2493520256
+          , "start":"3.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2489186064
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2488542624
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":127
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2522047488
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2523305200
+          , "end":"231.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2493520256
+          , "to":2489186064
+        }
+        , {
+          "from":2489186064
+          , "to":2522047488
+        }
+        , {
+          "from":2493520256
+          , "to":2488542624
+        }
+        , {
+          "from":2488542624
+          , "to":2522047488
+        }
+        , {
+          "from":2522047488
+          , "to":2523305200
+        }
+        , {
+          "from":2493520256
+          , "to":2523305200
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"2520226192"
+      , "dst":"2520229056"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"const::'lambda'().B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"132"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                  , "line":"127"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":2520226192
+          , "start":"196.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":127
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2522034864
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2488542624
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":127
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2520229056
+          , "end":"196.00"
+          , "parent":"_ZTSZZ12parallel_bfsRSt6vectorIS_IiSaIiEESaIS1_EEENKUlRN2cl4sycl7handlerEE_clES8_EUlvE_.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":127
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2520226192
+          , "to":2522034864
+        }
+        , {
+          "from":2522034864
+          , "to":2488542624
+        }
+        , {
+          "from":2488542624
+          , "to":2520229056
+        }
+        , {
+          "from":2520226192
+          , "to":2520229056
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

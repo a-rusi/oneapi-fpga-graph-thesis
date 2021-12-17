@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<board version="20.2" name="s10gx">
+
+  <compile name="top" project="top" revision="top" qsys_file="none" generic_kernel="1">
+    <generate cmd="quartus_sh -t scripts/pre_flow_pr.tcl"/>
+    <synthesize cmd="quartus_cdb -t compile_script.tcl top"/>
+    <auto_migrate platform_type="s10_ref" >
+      <include fixes=""/>
+      <exclude fixes=""/>
+    </auto_migrate>
+  </compile>
+
+  <compile name="flat" project="top" revision="flat" qsys_file="none" generic_kernel="1">
+    <generate cmd="quartus_sh -t scripts/pre_flow_pr.tcl flat"/>
+    <synthesize cmd="quartus_cdb -t compile_script.tcl flat"/>
+    <auto_migrate platform_type="s10_ref" >
+      <include fixes=""/>
+      <exclude fixes="pre_skipbak,post_skipbak"/>
+    </auto_migrate>
+  </compile>
+
+  <compile name="base" project="top" revision="base" qsys_file="none" generic_kernel="1">
+    <generate cmd="quartus_sh -t scripts/pre_flow_pr.tcl base"/>
+    <synthesize cmd="quartus_cdb -t compile_script.tcl base"/>
+    <auto_migrate platform_type="s10_ref" >
+      <include fixes=""/>
+      <exclude fixes="pre_skipbak,post_skipbak"/>
+    </auto_migrate>
+  </compile>
+
+  <compile name="regenerate_cache" project="top" revision="top" qsys_file="none" generic_kernel="1">
+    <generate cmd="quartus_sh -t scripts/pre_flow_pr.tcl"/>
+    <synthesize cmd="quartus_sh -t scripts/regenerate_cache.tcl s10_ref s10gx"/>
+    <auto_migrate platform_type="s10_ref" >
+      <include fixes=""/>
+      <exclude fixes="pre_skipbak"/>
+    </auto_migrate>
+  </compile>
+
+  <device device_model="1sg280lu3f50e1vgs1_dm.xml">
+    <used_resources>
+      <alms num="6566"/> <!-- ALMs used in final placement - ALMs used for registers -->
+      <ffs num="20030"/>
+      <dsps num="0"/>
+      <rams num="112"/>
+    </used_resources>
+  </device>
+
+  <!-- DDR4-1866 -->
+  <global_mem name="DDR" max_bandwidth="14928" interleaved_bytes="1024" config_addr="0x018">
+    <interface name="board" port="kernel_mem0" type="slave" width="512" maxburst="16" address="0x00000000" size="0x80000000" latency="240" waitrequest_allowance="6"/>
+  </global_mem>
+
+  <host>
+    <kernel_config start="0x00000000" size="0x0100000"/>
+  </host>
+
+  <interfaces>
+    <!--  kernel_cra is a master interface so waitrequest_allowance specifies the BSP's contribution to the waitrequest-to-data roundtrip, which is 5.
+          The BSP implements 2 pipeline bridges (one in the static region and one in the pr_region).
+          So there are 2 cycles for waitrequest to pass from the slave through the pipeline bridges to the master (which is a clock crossing bridge (CCB)), 1 cycle in the CCB, 
+            and then 2 cycles for data to pass through the (same) pipeline bridge to the slave. -->
+    <interface name="board" port="kernel_cra" type="master" width="64" misc="0" waitrequest_allowance="5"/> 
+    <interface name="board" port="kernel_irq" type="irq" width="1"/>
+    <kernel_clk_reset clk="board.kernel_clk" clk2x="board.kernel_clk2x" reset="board.kernel_reset"/>
+  </interfaces>
+
+</board>

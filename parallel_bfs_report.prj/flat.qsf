@@ -1,0 +1,137 @@
+# (c) 1992-2020 Intel Corporation.                            
+# Intel, the Intel logo, Intel, MegaCore, NIOS II, Quartus and TalkBack words    
+# and logos are trademarks of Intel Corporation or its subsidiaries in the U.S.  
+# and/or other countries. Other marks and brands may be claimed as the property  
+# of others. See Trademarks on intel.com for full list of Intel trademarks or    
+# the Trademarks & Brands Names Database (if Intel) or See www.Intel.com/legal (if Altera) 
+# Your use of Intel Corporation's design tools, logic functions and other        
+# software and tools, and its AMPP partner logic functions, and any output       
+# files any of the foregoing (including device programming or simulation         
+# files), and any associated documentation or information are expressly subject  
+# to the terms and conditions of the Altera Program License Subscription         
+# Agreement, Intel MegaCore Function License Agreement, or other applicable      
+# license agreement, including, without limitation, that your use is for the     
+# sole purpose of programming logic devices manufactured by Intel and sold by    
+# Intel or its authorized distributors.  Please refer to the applicable          
+# agreement for further details.                                                 
+
+# device.tcl contains settings unique to each device type/board variant (most importantly, the device string for the particular device type)
+source device.tcl
+
+#============================================================
+# Files and basic settings
+#============================================================
+set_global_assignment -name TOP_LEVEL_ENTITY top
+
+set_global_assignment -name SDC_FILE top.sdc
+
+# The file opencl_bsp_ip.qsf contains all necessary Verilog and Qsys IP files
+# top.v, ip/freeze_wrapper.v are used for all compile revisions
+# for flat and base revision compiles board.qsys is generated
+# and the resulting .ip files are appended to this file
+# for top revision compiles, none is generated
+# the compile flow itself imports a post-fit netlist of board.qsys from the base
+# revision compile and does not require the sources
+source opencl_bsp_ip.qsf
+
+# Post IP SDC constraints
+set_global_assignment -name SDC_FILE top_post.sdc
+
+# Execute the pre/post CAD flow
+set_global_assignment -name POST_FLOW_SCRIPT_FILE "quartus_cdb:scripts/post_flow_pr.tcl"
+
+#============================================================
+# Revision Specific Settings
+#============================================================
+set_global_assignment -name AUTO_GLOBAL_CLOCK OFF
+set_global_assignment -name AUTO_GLOBAL_REGISTER_CONTROLS OFF
+
+# promote global clocks
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to board_inst|pcie|pcie|hip|altera_pcie_s10_hip_ast_pipen1b_inst|xcvr_hip_native|ch0   
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to board_inst|mem|mem_ddr4_s10|mem_ddr4_s10_core_usr_clk  
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to config_clk
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to pll_ref_clk 
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|s10xcvrfabric|osc_clk_in_int 
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|intosc|clk 
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|jtagpins|atom_inst|atom 
+
+# promote global resets
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to board_inst|mem|reset_controller_ddr4a|reset_controller_ddr4a|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out 
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to board_inst|mem|rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out  
+
+# kernel clocks
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_outclk0  
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll_outclk1  
+
+# kernel reset
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to freeze_wrapper_inst|board_kernel_reset_reset_n_reg
+
+# This setting indicates that the global signal will be frozen high during PR by user logic (orchestrated in software)
+set_instance_assignment -name PR_ALLOW_GLOBAL_LIMS ON -to freeze_wrapper_inst|board_kernel_reset_reset_n_reg
+
+set_instance_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF -to board_inst|pipe_stage_*
+set_instance_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF -to board_inst|board_mm_bridge_*
+set_instance_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF -to board_inst|mem|mem_mm_bridge_*
+
+# set the kernel clock network size to the entire fpga. Apply this for both the 1x and 2x clocks. Ensuring both clocks have the same clock network size significantly helps
+# timing closure on transfers between the two domains.
+set_instance_assignment -name CLOCK_REGION "SX0 SY0 SX8 SY11" -to board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll|stratix10_altera_iopll_i|outclk[0]
+set_instance_assignment -name CLOCK_REGION "SX0 SY0 SX8 SY11" -to board_inst|kernel_clk_gen|kernel_clk_gen|kernel_pll|stratix10_altera_iopll_i|outclk[1]
+
+#============================================================
+# Synthesis and Fitter Fine-Tuning
+#============================================================
+set_global_assignment -name OPTIMIZATION_MODE "HIGH PERFORMANCE EFFORT"
+
+# configuration settings
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "AVST X16"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name ENABLE_ED_CRC_CHECK ON
+set_global_assignment -name MINIMUM_SEU_INTERVAL 0
+set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_100MHZ
+set_global_assignment -name DEVICE_INITIALIZATION_CLOCK OSC_CLK_1_125MHZ
+set_global_assignment -name PRESERVE_UNUSED_XCVR_CHANNEL ON
+
+# VID settings
+set_global_assignment -name USE_PWRMGT_SCL SDM_IO14
+set_global_assignment -name USE_PWRMGT_SDA SDM_IO11
+set_global_assignment -name VID_OPERATION_MODE "PMBUS MASTER"
+set_global_assignment -name PWRMGT_BUS_SPEED_MODE "400 KHZ"
+set_global_assignment -name PWRMGT_SLAVE_DEVICE_TYPE LTM4677
+set_global_assignment -name PWRMGT_SLAVE_DEVICE0_ADDRESS 4F
+set_global_assignment -name PWRMGT_SLAVE_DEVICE1_ADDRESS 00
+set_global_assignment -name PWRMGT_SLAVE_DEVICE2_ADDRESS 00
+set_global_assignment -name PWRMGT_SLAVE_DEVICE3_ADDRESS 00
+set_global_assignment -name PWRMGT_SLAVE_DEVICE4_ADDRESS 00
+set_global_assignment -name PWRMGT_SLAVE_DEVICE5_ADDRESS 00
+set_global_assignment -name PWRMGT_SLAVE_DEVICE6_ADDRESS 00
+set_global_assignment -name PWRMGT_SLAVE_DEVICE7_ADDRESS 00
+set_global_assignment -name PWRMGT_PAGE_COMMAND_ENABLE ON
+set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "AUTO DISCOVERY"
+set_global_assignment -name PWRMGT_TRANSLATED_VOLTAGE_VALUE_UNIT VOLTS
+
+#============================================================
+# End of original settings
+#============================================================
+
+#============================================================
+# Board settings
+#============================================================
+
+#############################################################
+# Misc
+#############################################################
+# Power model
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+
+
+set_global_assignment -name QIP_FILE kernel_system.qip
+
+set_global_assignment -name SOURCE_TCL_SCRIPT_FILE ip_include.tcl
+
+set_instance_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF -to *_NO_SHIFT_REG*
+
+set_global_assignment -name VERILOG_CONSTANT_LOOP_LIMIT 10000

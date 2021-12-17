@@ -1,0 +1,47 @@
+# (c) 1992-2020 Intel Corporation.                            
+# Intel, the Intel logo, Intel, MegaCore, NIOS II, Quartus and TalkBack words    
+# and logos are trademarks of Intel Corporation or its subsidiaries in the U.S.  
+# and/or other countries. Other marks and brands may be claimed as the property  
+# of others. See Trademarks on intel.com for full list of Intel trademarks or    
+# the Trademarks & Brands Names Database (if Intel) or See www.Intel.com/legal (if Altera) 
+# Your use of Intel Corporation's design tools, logic functions and other        
+# software and tools, and its AMPP partner logic functions, and any output       
+# files any of the foregoing (including device programming or simulation         
+# files), and any associated documentation or information are expressly subject  
+# to the terms and conditions of the Altera Program License Subscription         
+# Agreement, Intel MegaCore Function License Agreement, or other applicable      
+# license agreement, including, without limitation, that your use is for the     
+# sole purpose of programming logic devices manufactured by Intel and sold by    
+# Intel or its authorized distributors.  Please refer to the applicable          
+# agreement for further details.                                                 
+
+source flat.qsf
+              
+set_global_assignment -name TOP_LEVEL_ENTITY top
+
+#############################################################
+# Partial Reconfiguration
+#############################################################
+set_global_assignment -name REVISION_TYPE PR_BASE
+
+set_instance_assignment -name PARTITION kernel -to freeze_wrapper_inst|pr_region_inst -entity top
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to freeze_wrapper_inst|pr_region_inst -entity top
+
+  ##############################################
+ #    PR region definition for the Kernel     #
+##############################################
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to freeze_wrapper_inst|pr_region_inst
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to freeze_wrapper_inst|pr_region_inst
+set_instance_assignment -name PLACE_REGION "19 0 62 324; 63 37 66 324; 67 0 140 324; 141 37 144 324; 145 0 145 324; 146 37 150 324; 151 0 273 324; 19 325 33 432; 38 325 46 432; 51 325 273 432" -to freeze_wrapper_inst|pr_region_inst
+set_instance_assignment -name ROUTE_REGION "0 0 273 432" -to freeze_wrapper_inst|pr_region_inst
+
+# needed for BAK flow (msf files need to be generated in quartus_fit stage of BAK flow compile)
+set_global_assignment -name INI_VARS "force_msf_write=on"
+
+set_global_assignment -name QIP_FILE kernel_system.qip
+
+set_global_assignment -name SOURCE_TCL_SCRIPT_FILE ip_include.tcl
+
+set_instance_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF -to *_NO_SHIFT_REG*
+
+set_global_assignment -name VERILOG_CONSTANT_LOOP_LIMIT 10000

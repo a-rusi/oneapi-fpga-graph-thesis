@@ -1,0 +1,238 @@
+{
+  "name":"loop_attributes"
+  , "id":4294967295
+  , "nodes":
+  [
+    {
+      "name":"const::'lambda'()"
+      , "id":2476611520
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"const::'lambda'().B0"
+          , "id":2476626176
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"9.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"const::'lambda'().B1"
+          , "id":2476626256
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"n/a"
+          , "ll":"1"
+          , "lt":"7.000000"
+          , "mi":"n/a"
+          , "pl":"No"
+          , "tc":"0"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: disabled."
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure is disabled due to loop not pipelined"
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                , "line":106
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"const::'lambda'().B3"
+              , "id":2476626416
+              , "af":"480.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Enabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lt":"423.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":113
+                  }
+                ]
+              ]
+              , "type":"loop"
+              , "children":
+              [
+                {
+                  "name":"const::'lambda'().B4"
+                  , "id":2476626496
+                  , "af":"480.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Enabled"
+                  , "ii":"460"
+                  , "ll":"3"
+                  , "lt":"475.000000"
+                  , "mi":"460"
+                  , "pl":"Yes"
+                  , "tc":"0"
+                  , "tn":"1"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: enabled."
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                        , "line":113
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                }
+              ]
+            }
+            , {
+              "name":"const::'lambda'().B5"
+              , "id":2476626576
+              , "af":"480.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lt":"1.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"bb"
+            }
+            , {
+              "name":"const::'lambda'().B2"
+              , "id":2476626336
+              , "af":"480.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lt":"6.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"1"
+              , "type":"bb"
+            }
+            , {
+              "name":"const::'lambda'().B6"
+              , "id":2476626656
+              , "af":"480.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"262"
+              , "ll":"2"
+              , "lt":"266.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"0"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: disabled."
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":125
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+          ]
+        }
+        , {
+          "name":"const::'lambda'().B7"
+          , "id":2476626736
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"7.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"const::'lambda'().B8"
+          , "id":2476626816
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+}

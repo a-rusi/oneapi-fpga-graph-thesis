@@ -1,0 +1,870 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"const::'lambda'()"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":3
+          , "name":"const::'lambda'().B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":4
+          , "name":"const::'lambda'().B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"7"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"10"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":5
+          , "name":"const::'lambda'().B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"6"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":6
+          , "name":"const::'lambda'().B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":12
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":113
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"19"
+                  , "Latency":"186"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":13
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/bits/stl_iterator.h"
+                    , "line":783
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-coalesced non-aligned"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"211"
+                  , "Latency":"206"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":22
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":111
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"8"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":23
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"423"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"423"
+              , "II":"1"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":7
+          , "name":"const::'lambda'().B4"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":14
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":117
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"19"
+                  , "Latency":"186"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":15
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":119
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"214"
+                  , "Latency":"30"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":16
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":120
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"248"
+                  , "Latency":"186"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":17
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":120
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"444"
+                  , "Latency":"30"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":24
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":115
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"25"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":25
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"474"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"474"
+              , "II":"460"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is pipelined with II of 460. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":8
+          , "name":"const::'lambda'().B5"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+              , "II":"1"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":9
+          , "name":"const::'lambda'().B6"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":18
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":127
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"186"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":19
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":131
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"13"
+                  , "Latency":"186"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":20
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":131
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"200"
+                  , "Latency":"30"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":21
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"235"
+                  , "Latency":"30"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////opt/intel/oneapi/compiler/2021.4.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":26
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/alejandror/parallel-bfs/src/parallel_bfs.cpp"
+                    , "line":125
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"27"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":27
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"265"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"265"
+              , "II":"262"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is pipelined with II of 262. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":10
+          , "name":"const::'lambda'().B7"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"7"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":11
+          , "name":"const::'lambda'().B8"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"memtype"
+      , "id":1
+      , "name":"Global Memory"
+      , "children":
+      [
+        {
+          "type":"memsys"
+          , "id":28
+          , "name":"DDR"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Number of banks":"1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":10
+      , "to":4
+    }
+    , {
+      "from":3
+      , "to":4
+    }
+    , {
+      "from":8
+      , "to":5
+    }
+    , {
+      "from":8
+      , "to":22
+    }
+    , {
+      "from":4
+      , "to":22
+    }
+    , {
+      "from":12
+      , "to":23
+    }
+    , {
+      "from":13
+      , "to":23
+    }
+    , {
+      "from":25
+      , "to":24
+    }
+    , {
+      "from":23
+      , "to":24
+    }
+    , {
+      "from":14
+      , "to":25
+    }
+    , {
+      "from":15
+      , "to":25
+    }
+    , {
+      "from":16
+      , "to":25
+    }
+    , {
+      "from":17
+      , "to":25
+    }
+    , {
+      "from":25
+      , "to":8
+    }
+    , {
+      "from":27
+      , "to":26
+    }
+    , {
+      "from":5
+      , "to":26
+    }
+    , {
+      "from":21
+      , "to":27
+    }
+    , {
+      "from":18
+      , "to":27
+    }
+    , {
+      "from":19
+      , "to":27
+    }
+    , {
+      "from":20
+      , "to":27
+    }
+    , {
+      "from":27
+      , "to":10
+    }
+    , {
+      "from":10
+      , "to":11
+    }
+    , {
+      "from":22
+      , "to":12
+    }
+    , {
+      "from":12
+      , "to":13
+    }
+    , {
+      "from":24
+      , "to":14
+    }
+    , {
+      "from":14
+      , "to":15
+    }
+    , {
+      "from":14
+      , "to":16
+    }
+    , {
+      "from":15
+      , "to":16
+    }
+    , {
+      "from":16
+      , "to":17
+    }
+    , {
+      "from":14
+      , "to":17
+    }
+    , {
+      "from":15
+      , "to":17
+    }
+    , {
+      "from":26
+      , "to":18
+    }
+    , {
+      "from":26
+      , "to":19
+    }
+    , {
+      "from":19
+      , "to":20
+    }
+    , {
+      "from":18
+      , "to":20
+    }
+    , {
+      "from":18
+      , "to":21
+    }
+    , {
+      "from":20
+      , "to":21
+    }
+    , {
+      "from":28
+      , "to":13
+    }
+    , {
+      "from":15
+      , "to":28
+    }
+    , {
+      "from":21
+      , "to":28
+    }
+    , {
+      "from":28
+      , "to":18
+    }
+    , {
+      "from":28
+      , "to":14
+    }
+    , {
+      "from":28
+      , "to":12
+    }
+    , {
+      "from":20
+      , "to":28
+    }
+    , {
+      "from":28
+      , "to":19
+    }
+    , {
+      "from":28
+      , "to":16
+    }
+    , {
+      "from":17
+      , "to":28
+    }
+  ]
+}
